@@ -1,0 +1,24 @@
+/* lg color : #333 | #ad1a4a */
+@import './lge-font.css';
+
+html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px;}
+.wrapper {max-width: 1600px; margin: auto; padding: 0 30px;}
+
+/********************header-wrapper********************/
+.header-wrapper {}
+  .header-wrapper .top-wrapper {background-color:#333; padding: 20px 0 6px 0; border: 1px solid yellow;}
+    .top-wrapper .login-wrap {float: right; border: 1px solid yellow;background-color: #ad1a4a; padding: 5px 16px; border-radius: 16px;}
+    .top-wrapper .login-wrap li {float: left; color: #f8f8f8;}
+    .top-wrapper .login-wrap li:nth-child(2) {font-family: 'LGSmHaL'; opacity: .5; margin: 0 10px;}
+    .top-wrapper .login-wrap i {margin-right: 10px;}
+
+  .header-wrapper .navi-wrapper {background-color: #333;}
+    .navi-wrapper .logo {float: left; width: 164px; height: 43px; background: url('../img/Common.png');border: 1px solid yellow;}
+    .navi-wrapper .logo a {display: inline-block; width: 100%; height: 100%;}
+    .navi-wrapper .navi-wrap {float: right; border: 1px solid yellow;}
+    .navi-wrapper .navi-wrap i {font-size: 22px; line-height: 14px;}
+    .navi-wrapper .navi-wrap .navi {float: left; font-size: 18px; color: #f8f8f8; padding: 14px 10px 27px 10px;}
+    .navi-wrapper .navi-wrap .navi:last-child > span {font-family: 'LGSmHaL'; opacity: .5; padding-right: 3px;}
+
+  .header-wrapper .navi-wrapper2 {background-color: #ad1a4a;}
+  
