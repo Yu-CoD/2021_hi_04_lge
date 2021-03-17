@@ -44,14 +44,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/*******************************BASE**********************************/
-
-a:link, a:visited, a:hover, a:active {color: inherit; text-decoration: none;}
 /* a:link {color: red;}
 a:visited {color:paleturquoise}
 a:hover{color:greenyellow}
 a:active{color: indianred;} */
+a:link, a:visited, a:hover, a:active {color: inherit; text-decoration: none;}
+img {vertical-align: bottom;}
+
+/*******************************BASE**********************************/
+
 .clearfix::after {display: block; content: ""; clear: both;}
 .img {width: 100%;}
-.imgx {max-width: 100%;}
+.imgx {max-width: 100%; width: 100%;}
