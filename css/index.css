@@ -27,11 +27,12 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px;}
     .navi-wrapper .navi-wrap {color: #f8f8f8; font-size: 18px; float: right; border: 1px solid yellow;}
     .navi-wrapper .navi-wrap .navi {padding: 16px 14px 30px 14px; float: left; height: 66px;}
     .navi-wrapper .navi-wrap .navi i {font-size: 22px; margin-top: -3px;}
-    .navi-wrapper .navi .sub-wrap {position: absolute; top: 66px; left: 0; height: 0; width: 100%; background-image: linear-gradient(#ccc, #f7f7f7f7); transition: all 0.35s;}
+      .navi-wrapper .navi .sub-wrap {position: absolute; top: 66px; left: 0; height: 0; width: 100%; background-image: linear-gradient(#ccc, #f7f7f7f7); transition: height 0.35s; overflow: hidden; font-size: 200px; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
+    .navi-wrapper .navi:hover > .sub-wrap {height: 300px;}
+    .navi-wrapper .navi:hover {background-color: #ccc;}
+    .navi-wrapper .navi:hover > a {color:#333;}
+    .navi-wrapper .navi:hover > .sub-wrap {z-index: 2;}
 
-    .navi-wrapper .navi:hover > .sub-wrap {height: 300px; box-shadow: #333 0 5px 4px;}
-    .navi-wrapper .navi:hover {color:#333; background-color: #ccc;}
     .navi-wrapper .navi-wrap .navi:last-child > span {opacity:.5}
-
 
   .header-wrapper .navi-wrapper2 {background-color: #ad1a4a;}
