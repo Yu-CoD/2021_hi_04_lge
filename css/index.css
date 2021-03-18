@@ -12,11 +12,11 @@ background: #333 url('../img/common.png') no-repeat 0 0;
 @import './lge-font.css';
 
 html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; height: 10000px;}
-.wrapper {max-width: 1600px; margin: auto; padding: 0 2rem; border: 2px solid purple;}
-.wrapper2 {max-width: 1300px; margin: auto; padding: 0 2rem; border: 2px solid green;}
+.wrapper {max-width: 1600px; margin: auto; padding: 0 2rem;}
+.wrapper2 {max-width: 1300px; margin: auto; padding: 0 2rem;}
 
 /******************* header-wrapper *************************/
-.header-wrapper {border: 2px solid red;}
+.header-wrapper {}
   .top-wrapper {background-color: #333; padding: 20px 0 6px 0;}
     .top-wrapper ul.top-wrap {float: right; padding: 6px 16px; background-color: #ad1a4a; border-radius: 13px;}
       .top-wrap li {float: left; color: #f8f8f8;}
@@ -31,18 +31,26 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
   .navi-wrapper .navi i {font-size: 22px; margin-top: -3px;}
   .navi-wrapper .navi:hover {background-color: #ccc;}
   .navi-wrapper .navi:hover > a {color:#333;}
-  .navi-wrapper .navi-wrap .navi:last-child > span {opacity:.5}
   .navi-wrapper .navi:hover > .sub-wrapper {height: 300px; z-index: 2;}
+  .navi-wrapper .navi-wrap .navi:last-child > span {opacity:.5}
 
-    .sub-wrapper {position: absolute; top: 66px; left: 0; height: 0; width: 100%; color:#333; background-image: linear-gradient(#ccc, #f7f7f7f7); transition: height 0.35s; overflow: hidden; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
-    .sub-wrapper .sub-wrap {float: left; width: 25%; border: 1px solid yellow;}
-    .sub-wrapper .sub-wrap.title{}
-    .sub-wrapper .sub-wrap.title > div {}
-    .sub-wrapper .sub-wrap.title > h2 {}
-    .sub-wrapper .sub-navi {}
-    .sub-wrapper .sub-prd {}
-    .sub-wrapper .sub-prd > ul {}
-    .sub-wrapper .sub-prd > ul > prd {}
+    .sub-wrapper {position: absolute; top: 63px; left: 0; height: 0; width: 100%; color:#333; background-image: linear-gradient(#ccc, #f7f7f7f7); transition: height 0.35s; overflow: hidden; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
+    .sub-wrapper > .wrapper2 {height: 100%; padding: 1.25%;}
+    .sub-wrapper .sub-wrap {float: left; width: 25%; height: 100%; padding: 0 1.25%;}
+    .sub-wrapper .sub-wrap:not(:last-child) {border-right: 1px solid #bbb;}
+    .sub-wrapper .sub-wrap.title {text-align: center;}
+    .sub-wrapper .sub-wrap.title > div {padding: 5% 10% 10% 10%;}
+    .sub-wrapper .sub-wrap.title > h2 {font-size: 0.875em; line-height: 1.75;}
+    .sub-wrapper .sub-wrap.title > h2 span {font-size: 1.25em; color: #ad1a4a;}
+    .sub-wrapper .sub-wrap.title a:hover {text-decoration: underline;}
+    .sub-wrapper .sub-navi {padding: 0.75em 0;}
+    .sub-wrapper .sub-navi:first-child {padding: 0 0 0.75em 0;}
+    .sub-wrapper .sub-navi::after {display: inline-block; content: '＞'; color:#ad1a4a; padding-left: 0.25em;}
+    .sub-wrapper .sub-prd {font-size: 0.8em; padding: 0.25em 0;}
+    .sub-wrapper .sub-prd a:hover {text-decoration: underline;}
+    .sub-wrapper .sub-prd > ul { padding: 0.5em;}
+    .sub-wrapper .sub-prd > ul > .prd {float: left; font-size: 0.9em; color: #121212;}
+    .sub-wrapper .sub-prd > ul > .prd ::before {display: inline-block; content: '·'; padding: 0 0.25em 0 0.75em;}
     
 
   .header-wrapper .navi-wrapper2 {background-color: #ad1a4a;}
