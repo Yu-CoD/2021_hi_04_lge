@@ -12,26 +12,36 @@ background: #333 url('../img/common.png') no-repeat 0 0;
 @import './lge-font.css';
 
 html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px;}
-.wrapper {max-width: 1600px; margin: auto; padding: 0 30px;}
+.wrapper {max-width: 1600px; margin: auto; padding: 0 30px; border: 2px solid purple;}
+.wrapper2 {margin: 15px auto; border: 2px solid green;}
 
 /******************* header-wrapper *************************/
 .header-wrapper {border: 2px solid red;}
-  .header-wrapper .top-wrapper {background-color: #333; padding: 20px 0 6px 0;border: 2px solid green;}
-    .top-wrapper .top-wrap {float: right; padding: 6px 16px; background-color: #ad1a4a; border-radius: 13px;}
+  .top-wrapper {background-color: #333; padding: 20px 0 6px 0; border: 2px solid green;}
+    .top-wrapper ul.top-wrap {float: right; padding: 6px 16px; background-color: #ad1a4a; border-radius: 13px;}
       .top-wrap li {float: left; color: #f8f8f8;}
       .top-wrap li:nth-child(2) {margin: 0 12px; opacity: .5;}
 
-  .header-wrapper .navi-wrapper {background-color: #333; position: relative; border: 2px solid blue;}
-    .navi-wrapper .logo {width: 164px; height: 43px; background: url('../img/Common.png'); float: left; border: 1px solid yellow;}
-      .navi-wrapper .logo a {display: inline-block; width:100%; height: 100%;}
-    .navi-wrapper .navi-wrap {color: #f8f8f8; font-size: 18px; float: right; border: 1px solid yellow;}
-    .navi-wrapper .navi-wrap .navi {padding: 16px 14px 30px 14px; float: left; height: 66px;}
-    .navi-wrapper .navi-wrap .navi i {font-size: 22px; margin-top: -3px;}
-      .navi-wrapper .navi .sub-wrapper {position: absolute; top: 66px; left: 0; height: 0; width: 100%; background-image: linear-gradient(#ccc, #f7f7f7f7); transition: height 0.35s; overflow: hidden; font-size: 200px; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
-    .navi-wrapper .navi:hover > .sub-wrapper {height: 300px; z-index: 2;}
-    .navi-wrapper .navi:hover {background-color: #ccc;}
-    .navi-wrapper .navi:hover > a {color:#333;}
+  .navi-wrapper {background-color: #333; position: relative; border: 2px solid blue;}
+  .navi-wrapper .logo {width: 164px; height: 43px; background: url('../img/Common.png'); float: left; border: 1px solid yellow;}
+    .navi-wrapper .logo a {display: inline-block; width:100%; height: 100%;}
+  .navi-wrapper .navi-wrap {color: #f8f8f8; font-size: 18px; float: right; border: 1px solid yellow;}
+  .navi-wrapper .navi-wrap .navi {padding: 16px 14px 30px 14px; float: left; height: 66px;}
+  .navi-wrapper .navi-wrap .navi i {font-size: 22px; margin-top: -3px;}
+  .navi-wrapper .navi:hover {background-color: #ccc;}
+  .navi-wrapper .navi:hover > a {color:#333;}
+  .navi-wrapper .navi-wrap .navi:last-child > span {opacity:.5}
+  .navi-wrapper .navi:hover > .sub-wrapper {height: 300px; z-index: 2;}
 
-    .navi-wrapper .navi-wrap .navi:last-child > span {opacity:.5}
+    .sub-wrapper {position: absolute; top: 66px; left: 0; height: 0; width: 100%; color:#333; background-image: linear-gradient(#ccc, #f7f7f7f7); transition: height 0.35s; overflow: hidden; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
+    .sub-wrapper .sub-wrap {float: left; width: 25%; border: 1px solid yellow;}
+    .sub-wrapper .sub-wrap.title{}
+    .sub-wrapper .sub-wrap.title > div {}
+    .sub-wrapper .sub-wrap.title > h2 {}
+    .sub-wrapper .sub-navi {}
+    .sub-wrapper .sub-prd {}
+    .sub-wrapper .sub-prd > ul {}
+    .sub-wrapper .sub-prd > ul > prd {}
+    
 
   .header-wrapper .navi-wrapper2 {background-color: #ad1a4a;}
