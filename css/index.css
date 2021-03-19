@@ -109,7 +109,7 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 .main-wrapper .slide > .content > .slogan {padding: 1em 0; transition: all 1s; line-height: 1.25; border: 2px solid green;}
 .main-wrapper .slide > .content > .slogan > br {display: block;}
 .main-wrapper .slide > .content > .brand {padding-bottom: 1em; transition: all 1s; border: 2px solid red;}
-.main-wrapper .slide > .content > .brand > img {min-width: 40%; transition: all 1s; border: 2px solid yellow;}
+.main-wrapper .slide > .content > .brand > img {max-width: 100%; transition: all 1s; border: 2px solid yellow;}
 .main-wrapper .slide > .content > .bt-link {}
 
 
@@ -118,7 +118,7 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 
   /******************** 반응형 **********************/
 @media (min-width: 576px) {
-  .main-wrapper .slide > .content > .brand > img {max-width: 80%;}
+
 }
 
 @media (min-width: 768px) {
@@ -126,7 +126,7 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 	.wrapper2 {padding: 0 1rem;}
 
   .main-wrapper .slide {padding: 8% 12% 12% 12%; background-position: center;}
-  .main-wrapper .slide > .content > .brand > img {max-width: 60%;}
+
 }
 
 @media (min-width: 992px) {
@@ -139,7 +139,7 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 
   .main-wrapper .slide > .content {font-size: 1.875em;}
   .main-wrapper .slide > .content > .slogan > br {display: none;}
-  .main-wrapper .slide > .content > .brand > img {max-width: 50%;}
+  .main-wrapper .slide > .content > .brand > img {max-width: 80%;}
 }
 
 @media (min-width: 1200px) {
