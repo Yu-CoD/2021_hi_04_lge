@@ -19,20 +19,10 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 .disp-cell {display: table-cell; text-align: center; vertical-align: middle;}
 .pink {color: #ad1a4a;}
 
+.angle-rt::after {display: inline-block; content: '＞'}
+
 /******************* header-wrapper *************************/
-/* 
-SCSS문법
-.header-wrapper {
-	.top-wrapper {
-		ul.top-wrap {
-			li {
-				float: left; color: #f8f8f8;
-				&:nth-child(2) {margin: 0 12px; opacity: .5;}
-			}
-		}
-	}
-} 
-*/
+
 .header-wrapper {}
   .top-wrapper {background-color: #333; padding: 20px 0 6px 0;}
     .top-wrapper ul.top-wrap {float: right; padding: 6px 16px; background-color: #ad1a4a; border-radius: 13px;}
@@ -90,6 +80,34 @@ SCSS문법
     .navi-wrapper2 .icon-wrap img {vertical-align: middle; margin-right: 0.25em; width: 18px;}
     .navi-wrapper2 .icon-wrap span {font-weight: bold; margin-right: 0.25em;}
 
+/********************* main-wrapper **********************/
+.main-wrapper {}
+.main-wrapper .slide {position: relative; padding: 10% 15%; background-size: cover; background-repeat: no-repeat;}
+.main-wrapper .slide:nth-child(1) {background-image: url('../img/main01.jpg');}
+.main-wrapper .slide:nth-child(2) {background-image: url('../img/main02.jpg');}
+.main-wrapper .slide:nth-child(3) {background-image: url('../img/main03.jpg');}
+.main-wrapper .slide:nth-child(4) {background-image: url('../img/main04.jpg');}
+.main-wrapper .slide:nth-child(5) {background-image: url('../img/main05.jpg');}
+.main-wrapper .slide:nth-child(6) {background-image: url('../img/main06.jpg');}
+.main-wrapper .slide:nth-child(7) {background-image: url('../img/main07.jpg');}
+.main-wrapper .slide:nth-child(8) {background-image: url('../img/main08.jpg');}
+.main-wrapper .slide:nth-child(9) {background-image: url('../img/main09.jpg');}
+.main-wrapper .slide:nth-child(10) {background-image: url('../img/main10.jpg');}
+.main-wrapper .slide > .content {font-size: 2em;}
+.main-wrapper .slide > .content > .slogan {padding: 1em 0; transition: all 1s; line-height: 1.25;}
+.main-wrapper .slide > .content > .slogan .br {display: block;}
+.main-wrapper .slide > .content > .slogan {padding: 1em 0;}
+.main-wrapper .slide > .content > .brand {padding-bottom: 1em; transition: all 1s;}
+.main-wrapper .slide > .content > .bt-link {}
+
+
+
+
+
+
+
+
+
 
 
   /******************** 반응형 **********************/
@@ -108,6 +126,10 @@ SCSS문법
 	.navi-wrapper2 .icon-wrap > .icon {float: left; margin: 0.625em;}
 	.navi-wrapper2 .icon-wrap img {margin-right: 0.5em; width: auto;}
 	.navi-wrapper2 .icon-wrap span {margin-right: 0.5em;}
+
+  .main-wrapper .slide > .content {font-size: 1.875em;}
+  .main-wrapper .slide > .content > .slogan .br {display: none;}
+  .main-wrapper .slide > .content > .brand {padding-bottom: 1em;}
 }
 
 @media (min-width: 1200px) {
@@ -117,8 +139,26 @@ SCSS문법
 @media (min-width: 1400px) {
   .navi-wrapper .navi-wrap {display: block;}
   .navi-wrapper .mb-navi-wrap {display: none;}
+
+  .main-wrapper .slide > .content {font-size: 2.125em;}
+  .main-wrapper .slide > .content > .brand {padding-bottom: 1em;}
 }
 
 @media (min-width: 1600px) {
 
 }
+
+
+/* 
+SCSS문법
+.header-wrapper {
+	.top-wrapper {
+		ul.top-wrap {
+			li {
+				float: left; color: #f8f8f8;
+				&:nth-child(2) {margin: 0 12px; opacity: .5;}
+			}
+		}
+	}
+} 
+*/
