@@ -17,8 +17,22 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 
 .disp-table {display: table;}
 .disp-cell {display: table-cell; text-align: center; vertical-align: middle;}
+.pink {color: #ad1a4a;}
 
 /******************* header-wrapper *************************/
+/* 
+SCSS문법
+.header-wrapper {
+	.top-wrapper {
+		ul.top-wrap {
+			li {
+				float: left; color: #f8f8f8;
+				&:nth-child(2) {margin: 0 12px; opacity: .5;}
+			}
+		}
+	}
+} 
+*/
 .header-wrapper {}
   .top-wrapper {background-color: #333; padding: 20px 0 6px 0;}
     .top-wrapper ul.top-wrap {float: right; padding: 6px 16px; background-color: #ad1a4a; border-radius: 13px;}
@@ -51,10 +65,15 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 
     .sub-wrapper .sub-signature > div {width: 33.3333%;}
     .sub-wrapper .sub-tv > div {width: 25%;}
+    .sub-wrapper .sub-pc > div {width: 25%;}
+    .sub-wrapper .sub-ref > div {width: 20%;}
 
     .sub-wrapper .sub-navi {padding: 0.75em 0;}
     .sub-wrapper .sub-navi:first-child {padding: 0 0 0.75em 0;}
     .sub-wrapper .sub-navi::after {display: inline-block; content: '＞'; color:#ad1a4a; padding-left: 0.25em;}
+    .sub-wrapper .sub-bookmark a i {color:#ad1a4a; font-size: .875em; padding-left: 0.25em;}
+    .sub-wrapper .sub-bookmark {margin-top: ;}
+    .sub-wrapper .sub-mt {margin-top: ;}
 
     .sub-wrapper .sub-prd {font-size: 0.8em; padding: 0.25em 0;}
     .sub-wrapper .sub-prd a:hover {text-decoration: underline;}
