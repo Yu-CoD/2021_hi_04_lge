@@ -15,6 +15,9 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 .wrapper {max-width: 1600px; margin: auto; padding: 0 2rem;}
 .wrapper2 {max-width: 1300px; margin: auto; padding: 0 2rem;}
 
+.disp-table {display: table;}
+.disp-cell {display: table-cell; text-align: center; vertical-align: middle;}
+
 /******************* header-wrapper *************************/
 .header-wrapper {}
   .top-wrapper {background-color: #333; padding: 20px 0 6px 0;}
@@ -35,14 +38,13 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
   .navi-wrapper .navi-wrap .navi:last-child > span {opacity:.5}
 
     .sub-wrapper {position: absolute; top: 63px; left: 0; height: 0; width: 100%; color:#333; background-image: linear-gradient(#dedfe4, #ffffffff); transition: height 0.35s; overflow: hidden; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
-    .sub-wrapper > .wrapper2 {height: 100%; padding: 1.25% 0;}
-    .sub-wrapper > .wrapper2 > div {float: left; height: 100%; color: #333;}
-    .sub-wrapper > .wrapper2 > div.sub-title {width: 25%; text-align: center;}
+    .sub-wrapper > .wrapper2 {height: 100%; padding: 1.25% 0;border: 1px solid green;}
+    .sub-wrapper > .wrapper2 > div {float: left; height: 100%; color: #333;border: 1px solid blue;}
+    .sub-wrapper > .wrapper2 > div.sub-title {width: 25%; text-align: center; padding: 2%; border: 1px solid red;}
     .sub-wrapper > .wrapper2 > div.sub-wrap {width: 75%;}
 
-    .sub-wrapper .sub-title > div {padding: 5% 10% 10% 10%;}
-    .sub-wrapper .sub-title > h2 {font-size: 0.875em; line-height: 1.75;}
-    .sub-wrapper .sub-title > h2 span {font-size: 1.25em; color: #ad1a4a;}
+    .sub-wrapper .sub-title h2 {font-size: 0.875em; line-height: 1.75;}
+    .sub-wrapper .sub-title h2 span {font-size: 1.25em; color: #ad1a4a;}
     .sub-wrapper .sub-title a:hover {text-decoration: underline;}
 
     .sub-wrapper .sub-wrap > div {float: left; height: 100%; padding: 0 1.25%; border-left: 1px solid #bbb;}
