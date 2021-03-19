@@ -92,8 +92,7 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 
 /********************* main-wrapper **********************/
 .main-wrapper {}
-.main-wrapper .slide {padding: 10% 15% 25% 15%; background-size: cover; background-repeat: no-repeat; 
-	background-position: 70% center;}
+.main-wrapper .slide {padding: 10% 15% 25% 15%; background-size: cover; background-repeat: no-repeat; background-position: 70% center;}
 .main-wrapper .slide:nth-child(1) {background-image: url('../img/main01.jpg');}
 /* .main-wrapper .slide:nth-child(2) {background-image: url('../img/main02.jpg');}
 .main-wrapper .slide:nth-child(3) {background-image: url('../img/main03.jpg');}
@@ -109,7 +108,7 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 .main-wrapper .slide > .content > .slogan {padding: 1em 0; transition: all 1s; line-height: 1.25; border: 2px solid green;}
 .main-wrapper .slide > .content > .slogan > br {display: block;}
 .main-wrapper .slide > .content > .brand {padding-bottom: 1em; transition: all 1s; border: 2px solid red;}
-.main-wrapper .slide > .content > .brand > img {max-width: 100%; transition: all 1s; border: 2px solid yellow;}
+.main-wrapper .slide > .content > .brand > img {max-width: 60%; transition: all 1s; border: 2px solid yellow;}
 .main-wrapper .slide > .content > .bt-link {}
 
 
@@ -152,7 +151,7 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 
   .main-wrapper .slide {padding: 6% 12% 16% 12%;}
   .main-wrapper .slide > .content {font-size: 2.125em;}
-  .main-wrapper .slide > .content > .brand > img {max-width: 40%;}
+  .main-wrapper .slide > .content > .brand > img {max-width: 100%;}
 }
 
 @media (min-width: 1600px) {
