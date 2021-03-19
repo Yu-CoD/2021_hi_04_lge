@@ -29,26 +29,34 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
   .navi-wrapper .mb-navi-wrap {float: right; color: #f8f8f8; font-size: 24px; padding: .5em 0 .75em 0; cursor: pointer;}
   .navi-wrapper .navi {float: left; padding: 0.875em 0.75em 1.75em 0.75em; height: 63px;}
   .navi-wrapper .navi i {font-size: 22px; margin-top: -3px;}
-  .navi-wrapper .navi:hover {background-color: #ccc;}
+  .navi-wrapper .navi:hover {background-color: #dedfe4;}
   .navi-wrapper .navi:hover > a {color:#333;}
   .navi-wrapper .navi:hover > .sub-wrapper {height: 300px; z-index: 2;}
   .navi-wrapper .navi-wrap .navi:last-child > span {opacity:.5}
 
-    .sub-wrapper {position: absolute; top: 63px; left: 0; height: 0; width: 100%; color:#333; background-image: linear-gradient(#ccc, #f7f7f7f7); transition: height 0.35s; overflow: hidden; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
-    .sub-wrapper > .wrapper2 {height: 100%; padding: 1.25%;}
-    .sub-wrapper .sub-wrap {float: left; width: 25%; height: 100%; padding: 0 1.25%;}
-    .sub-wrapper .sub-wrap:not(:last-child) {border-right: 1px solid #bbb;}
-    .sub-wrapper .sub-wrap.title {text-align: center;}
-    .sub-wrapper .sub-wrap.title > div {padding: 5% 10% 10% 10%;}
-    .sub-wrapper .sub-wrap.title > h2 {font-size: 0.875em; line-height: 1.75;}
-    .sub-wrapper .sub-wrap.title > h2 span {font-size: 1.25em; color: #ad1a4a;}
-    .sub-wrapper .sub-wrap.title a:hover {text-decoration: underline;}
+    .sub-wrapper {position: absolute; top: 63px; left: 0; height: 0; width: 100%; color:#333; background-image: linear-gradient(#dedfe4, #ffffffff); transition: height 0.35s; overflow: hidden; z-index: 1; box-shadow: 0 6px 6px rgba(0,0,0,.4);}
+    .sub-wrapper > .wrapper2 {height: 100%; padding: 1.25% 0;}
+    .sub-wrapper > .wrapper2 > div {float: left; height: 100%; color: #333;}
+    .sub-wrapper > .wrapper2 > div.sub-title {width: 25%; text-align: center;}
+    .sub-wrapper > .wrapper2 > div.sub-wrap {width: 75%;}
+
+    .sub-wrapper .sub-title > div {padding: 5% 10% 10% 10%;}
+    .sub-wrapper .sub-title > h2 {font-size: 0.875em; line-height: 1.75;}
+    .sub-wrapper .sub-title > h2 span {font-size: 1.25em; color: #ad1a4a;}
+    .sub-wrapper .sub-title a:hover {text-decoration: underline;}
+
+    .sub-wrapper .sub-wrap > div {float: left; height: 100%; padding: 0 1.25%; border-left: 1px solid #bbb;}
+
+    .sub-wrapper .sub-signature > div {width: 33.3333%;}
+    .sub-wrapper .sub-tv > div {width: 25%;}
+
     .sub-wrapper .sub-navi {padding: 0.75em 0;}
     .sub-wrapper .sub-navi:first-child {padding: 0 0 0.75em 0;}
     .sub-wrapper .sub-navi::after {display: inline-block; content: '＞'; color:#ad1a4a; padding-left: 0.25em;}
+
     .sub-wrapper .sub-prd {font-size: 0.8em; padding: 0.25em 0;}
     .sub-wrapper .sub-prd a:hover {text-decoration: underline;}
-    .sub-wrapper .sub-prd > ul { padding: 0.5em;}
+    .sub-wrapper .sub-prd > ul {padding: 0.5em;}
     .sub-wrapper .sub-prd > ul > .prd {float: left; font-size: 0.9em; color: #121212;}
     .sub-wrapper .sub-prd > ul > .prd ::before {display: inline-block; content: '·'; padding: 0 0.25em 0 0.75em;}
     
