@@ -1,12 +1,11 @@
-/*****************************RESET CSS********************************/
-
+/******************** Reset.css ***********************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li, 
+dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -44,18 +43,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-button {
-	font-family: inherit;
-}
-/* a:link {color: red;}
-a:visited {color:paleturquoise}
-a:hover{color:greenyellow}
-a:active{color: indianred;} */
 a:link, a:visited, a:hover, a:active {color: inherit; text-decoration: none;}
 img {vertical-align: bottom;}
 
-/*******************************BASE**********************************/
-
+/******************** Base ***********************/
 .clearfix::after {display: block; content: ""; clear: both;}
 .img {width: 100%;}
-.imgx {max-width: 100%; width: 100%;}
+.imgx {max-width: 100%;}
