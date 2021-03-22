@@ -21,3 +21,31 @@ $(".best-wrapper .pager-wrapper a.pager").click(function(e){
 	$(".best-wrapper .pager-wrapper a.pager").removeClass('active')
 	$(this).addClass('active')
 })
+
+var swiper = new Swiper('.swiper-container', {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	loop: true,
+	navigation: {
+		nextEl: '.slide-wrapper .bt-next',
+		prevEl: '.slide-wrapper .bt-prev',
+	},
+	pagination: {
+		el: '.slide-wrapper .swiper-pagination',
+		clickable: true
+	},
+	breakpoints: {
+	768: {
+		slidesPerView: 2,
+		spaceBetween: 20,
+	},
+	1200: {
+		slidesPerView: 3,
+		spaceBetween: 20,
+	},
+	1400: {
+		slidesPerView: 4,
+		spaceBetween: 20,
+	},
+},
+});

@@ -7,9 +7,11 @@
   <link rel="shortcut icon" href="/lg_favicon.ico">
   <title>LG전자수업중</title>
   <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/index.css">
   <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
 </head>
 <body>
   <!-- .header-wrapper -->
@@ -380,10 +382,10 @@
       <img src="../img/bestseller_title.jpg" alt="베스트셀러 제목" class="imgx">
     </h3>
     <div class="slide-wrapper">
-      <div class="slide-stage">
-        <div class="slide-wrap clearfix">
+      <div class="slide-stage swiper-container">
+        <div class="slide-wrap swiper-wrapper">
           <!-- ul.slide*4>li>img.imgx+div>h4.best-title+p.best-cont -->
-          <ul class="slide">
+          <ul class="slide swiper-slide">
             <li>
               <div><img src="../img/best01.jpg" alt="" class="imgx"></div>
             </li>
@@ -392,7 +394,7 @@
               <p class="best-cont">16Z90P-GA50K</p>
             </div>
           </ul>
-          <ul class="slide">
+          <ul class="slide swiper-slide">
             <li>
               <div><img src="../img/best02.jpg" alt="" class="imgx"></div>
             </li>
@@ -401,7 +403,7 @@
               <p class="best-cont">LM-F100N</p>
             </div>
           </ul>
-          <ul class="slide">
+          <ul class="slide swiper-slide">
             <li>
               <div><img src="../img/best03.jpg" alt="" class="imgx"></div>
             </li>
@@ -410,7 +412,7 @@
               <p class="best-cont">OLED77G1KNA</p>
             </div>
           </ul>
-          <ul class="slide">
+          <ul class="slide swiper-slide">
             <li>
               <div><img src="../img/best04.jpg" alt="" class="imgx"></div>
             </li>
@@ -419,14 +421,51 @@
               <p class="best-cont">S3BOF</p>
             </div>
           </ul>
+          <ul class="slide swiper-slide">
+            <li>
+              <div><img src="../img/best05.jpg" alt="" class="imgx"></div>
+            </li>
+            <div>
+              <h4 class="best-title">스팀 건조기<sup>ThinQ</sup></h4>
+              <p class="best-cont">RH17VTS</p>
+            </div>
+          </ul>
+          <ul class="slide swiper-slide">
+            <li>
+              <div><img src="../img/best06.jpg" alt="" class="imgx"></div>
+            </li>
+            <div>
+              <h4 class="best-title">LG 오브제컬렉션 상하좌우 정수기</h4>
+              <p class="best-cont">WD503ACB</p>
+            </div>
+          </ul>
+          <ul class="slide swiper-slide">
+            <li>
+              <div><img src="../img/best07.jpg" alt="" class="imgx"></div>
+            </li>
+            <div>
+              <h4 class="best-title">LG 퓨리케어 360˚ 공기청정기 플러스</h4>
+              <p class="best-cont">AS301DWFA</p>
+            </div>
+          </ul>
+          <ul class="slide swiper-slide">
+            <li>
+              <div><img src="../img/best08.jpg" alt="" class="imgx"></div>
+            </li>
+            <div>
+              <h4 class="best-title">LG 오브제컬렉션 청소기</h4>
+              <p class="best-cont">AO9571WKT</p>
+            </div>
+          </ul>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
       <div class="bt bt-prev">〈</div>
       <div class="bt bt-next">〉</div>
-      <div class="pager-wrapper">
+<!--       <div class="pager-wrapper">
         <a href="#" class="pager active"></a>
         <a href="#" class="pager"></a>
-      </div>
+      </div> -->
     </div>
   </section>
   <!-- .best-wrapper// -->
@@ -448,6 +487,7 @@
 
   </footer>
   <!-- .footer-wrapper// -->
+  <script src="../js/index.js"></script>
 </body>
 </html>
 
