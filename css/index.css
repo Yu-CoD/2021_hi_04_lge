@@ -109,7 +109,14 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 .main-wrapper .slide > .content > .slogan > br {display: block;}
 .main-wrapper .slide > .content > .brand {padding-bottom: 1em; transition: all 1s; border: 2px solid red;}
 .main-wrapper .slide > .content > .brand > img {max-width: 60%; transition: all 1s; border: 2px solid yellow;}
-.main-wrapper .slide > .content > .bt-link {}
+.main-wrapper .slide > .content button {border: 1px solid #333; background-color: transparent; padding: 0.5em 2em; font-size: 1.125em; outline: none; font-family: inherit;}
+
+.main-wrapper .pager-wrapper {text-align: center; margin: 2em 0;}
+.main-wrapper .pager-wrapper a {font-size: 1em; vertical-align: middle; margin: 0 0.2em; color: #ccc; transition: all 0.5s;}
+.main-wrapper .pager-wrapper a.pager {width: 18px; height: 18px; border: 2px solid #ccc; display: inline-block; border-radius: 9px;}
+.main-wrapper .pager-wrapper a.pager.active {border: 2px solid #ad1a4a; width: 28px; background-color: #ad1a4a;}
+.main-wrapper .pager-wrapper a.bt-play.active {color:#ad1a4a}
+.main-wrapper .pager-wrapper a.bt-pause.active {color:#ad1a4a}
 
 
 
