@@ -35,16 +35,18 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 /******************* header-wrapper *************************/
 
 .header-wrapper {}
-  .top-wrapper {background-color: #333; padding: 20px 0 6px 0;}
+  .top-wrapper {background-color: #333; padding: 20px 0 6px 0; display: none;}
     .top-wrapper ul.top-wrap {float: right; padding: 6px 16px; background-color: #ad1a4a; border-radius: 13px;}
       .top-wrap li {float: left; color: #f8f8f8;}
       .top-wrap li:nth-child(2) {margin: 0 .875em; opacity: .5;}
 
-  .navi-wrapper {background-color: #333; position: relative;}
+  .navi-wrapper {background-color: #333; position: relative; padding-top: 0.5em;}
   .navi-wrapper .logo {width: 164px; height: 43px; background: url('../img/Common.png'); float: left;}
     .navi-wrapper .logo a {display: inline-block; width:100%; height: 100%;}
   .navi-wrapper .navi-wrap {float: right;color: #f8f8f8; font-size: 18px; display: none;}
   .navi-wrapper .mb-navi-wrap {float: right; color: #f8f8f8; font-size: 24px; padding: .5em 0 .75em 0; cursor: pointer;}
+  .navi-wrapper .mb-navi-wrap > a {margin-left: 0.5em; vertical-align: middle;}
+  .navi-wrapper .mb-navi-wrap > a:not(:last-child) {font-size: 0.75em;}
   .navi-wrapper .navi {float: left; padding: 0.875em 0.75em 1.75em 0.75em; height: 63px;}
   .navi-wrapper .navi i {font-size: 22px; margin-top: -3px;}
   .navi-wrapper .navi:hover {background-color: #dedfe4;}
@@ -164,6 +166,8 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 }
 
 @media (min-width: 1400px) {
+  .top-wrapper {display: block;}
+  .navi-wrapper {padding:0;}
   .navi-wrapper .navi-wrap {display: block;}
   .navi-wrapper .mb-navi-wrap {display: none;}
   .main-wrapper .slide {padding: 6% 12% 16% 12%;}
