@@ -3,7 +3,7 @@
 
 html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; height: 10000px;}
 .wrapper {max-width: 1600px; margin: auto; padding: 0 2rem;}
-.wrapper2 {max-width: 1300px; margin: auto; height: 100%; padding: .7%;}
+.wrapper2 {max-width: 1300px; margin: auto; height: 100%; padding: .7%; border: 5px solid skyblue;}
 
 /********************header-wrapper********************/
 .header-wrapper {}
@@ -25,18 +25,21 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
     .navi-wrapper .navi:hover > .sub-wrapper {height: 320px; z-index: 2;}
     .navi-wrap i {font-size: 22px;}
 
-  .sub-wrapper {position: absolute; top: 70px; left: 0; width: 100%; height: 0; background-image: linear-gradient(#ccc, #f7f7f7f7); overflow: hidden; color: #333; transition: height 0.5s; box-shadow: 0 6px 6px rgba(0,0,0,.4); z-index: 1;}
+  .sub-wrapper {position: absolute; top: 70px; left: 0; width: 100%; height: 0; background-image: linear-gradient(#ccc, #f7f7f7f7); overflow: hidden; color: #333; transition: height 0.5s; box-shadow: 0 6px 6px rgba(0,0,0,.4); z-index: 1; border: 5px solid red;}
 
-    .sub-wrap {float: left; width: 25%; height: 100%; line-height: 1.75; padding-left: .8em;}
-    .sub-wrap:not(:last-child) {border-right: 1px solid #bbb;}
-    .sub-wrap.title {padding:0;}
-    .sub-wrap.title .hover {padding: 11% 20% 11% 0; text-align: center;}
-    .sub-wrap.title .hover:hover {text-decoration: underline;}
-    .sub-wrap.title h2 {font-size: .75em; padding-top: 8%;}
-    .sub-wrap.title h2 span {font-size: 1.25em; color: #ad1a4a;}
-    .sub-wrap .sub-navi::after {display: inline-block; content: '＞'; color: #ad1a4a;}
-    .sub-prd .prd {float: left; font-size: .8em;}
-    .sub-prd .prd::before {display: inline-block; content: '·'; padding: 0 .4em 0 .6em;}
+  .sub-wrapper .sub-title {float: left; width: 25%; height: 100%; border: 5px solid yellow;}
+  .sub-wrapper .sub-wrap {float: left; width: 75%; height: 100%; border: 5px solid orange;}
+  .sub-wrapper .sub-wrap > div {float: left; height: 100%; padding-left: .7em; border-left: 1px solid #bbb;}
+
+  .sub-wrapper .sub-signature > div {width: 33.3333%;}
+  .sub-wrapper .sub-tv > div {width: 25%;}
+  .sub-wrapper .sub-pc > div {width: 25%;}
+  .sub-wrapper .sub-kitchen > div {width: 20%;}
+  .sub-wrapper .sub-wash > div {width: 16.6666%;}
+  .sub-wrapper .sub-air > div {width: 20%;}
+  .sub-wrapper .sub-mb > div {width: 25%;}
+  .sub-wrapper .sub-beauty > div {width: 25%;}
+  .sub-wrapper .sub-etc > div {width: 12.5%;}
 
   .header-wrapper .navi-wrapper2 {background-color: #ad1a4a;}
   
