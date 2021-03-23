@@ -23,9 +23,6 @@ $(".best-wrapper .pager-wrapper a.pager").click(function(e){
 })
 
 var swiperMain = new Swiper('.main-wrapper .swiper-container', {
-	slidesPerView: 1,
-	slidesPerGroup: 1,
-	spaceBetween: 30,
 	navigation: {
 		nextEl: '.main-wrapper .bt-next',
 		prevEl: '.main-wrapper .bt-prev',
@@ -40,7 +37,7 @@ var swiperMain = new Swiper('.main-wrapper .swiper-container', {
 var swiperBest = new Swiper('.best-wrapper .swiper-container', {
 	slidesPerView: 1,
 	slidesPerGroup: 1,
-	spaceBetween: 30,
+	spaceBetween: 0,
 	loop: true,
 	navigation: {
 		nextEl: '.best-wrapper .bt-next',
