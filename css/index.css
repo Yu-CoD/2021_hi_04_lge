@@ -160,7 +160,18 @@ html, body {font-family: 'LGSmHaR'; font-size: 14px; letter-spacing: -1px; heigh
 .best-wrapper > .slide-wrapper > .slide-stage > .slide-wrap > .slide > div > .best-cont {color: #777;}
 
 
-
+  /**************** evt-wrapper **********************/
+.evt-wrapper {background-color: #f8f8f8; padding: 5em 0;}
+.evt-wrapper > div > .title {position: relative; font-size: 1.5em; text-align: center; line-height: 1.5;}
+.evt-wrapper > div > .title > span {border-bottom: 1px solid #999; display: inline-block;}
+.evt-wrapper > div > .title .bt-more {position: absolute; top: 0; right: 0; font-size: .635em; color: #777;}
+.evt-wrapper > div > .title .bt-more::after {display: inline-block; content: '+'; width: 20px; height: 20px; box-sizing: border-box; border: 1px solid #bbb; font-size: 1.25em; line-height: 20px; border-radius: 50%; padding: 0 1px 2px 0; margin-left: .5em; transform:translateY(1px);}
+.evt-wrapper .cont-wrapper {background-color: #fff; margin: 2em auto 1em auto;}
+.evt-wrapper .cont-wrapper > div {float: left;}
+.evt-wrapper .banner-wrap {width: 100%; max-width: 800px;}
+.evt-wrapper .cont-wrap {padding: 3em;}
+.evt-wrapper .cont-wrap > h4.title {font-size: 1.6em;}
+.evt-wrapper .cont-wrap > p.content {font-size: 1.25em; color: #444; line-height: 1.35em;}
 
   /******************** 반응형 **********************/
 @media (min-width: 576px) {
