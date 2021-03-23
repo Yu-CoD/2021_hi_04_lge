@@ -22,17 +22,32 @@ $(".best-wrapper .pager-wrapper a.pager").click(function(e){
 	$(this).addClass('active')
 })
 
-var swiper = new Swiper('.swiper-container', {
+var swiperMain = new Swiper('.main-wrapper .swiper-container', {
+	slidesPerView: 1,
+	slidesPerGroup: 1,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: '.main-wrapper .bt-next',
+		prevEl: '.main-wrapper .bt-prev',
+	},
+	pagination: {
+		el: '.main-wrapper .swiper-pagination',
+		clickable: true
+	},
+},
+);
+
+var swiperBest = new Swiper('.best-wrapper .swiper-container', {
 	slidesPerView: 1,
 	slidesPerGroup: 1,
 	spaceBetween: 30,
 	loop: true,
 	navigation: {
-		nextEl: '.slide-wrapper .bt-next',
-		prevEl: '.slide-wrapper .bt-prev',
+		nextEl: '.best-wrapper .bt-next',
+		prevEl: '.best-wrapper .bt-prev',
 	},
 	pagination: {
-		el: '.slide-wrapper .swiper-pagination',
+		el: '.best-wrapper .swiper-pagination',
 		clickable: true
 	},
 	breakpoints: {
